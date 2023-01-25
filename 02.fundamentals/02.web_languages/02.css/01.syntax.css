@@ -1,0 +1,33 @@
+/*
+    Las reglas de estilo CSS permite modificar la visualizacion de los elementos que componen una aplicacion o pagina web
+
+    p {
+        color: red;
+    }
+
+    p - Elemento a estilizar
+    color - Propiedad CSS
+    red - Valor de la propiedad CSS
+
+    Estilos CSS en linea
+
+        <p style="color: red;">Hello World</p>
+
+        ** Los estilos CSS en linea son aplicados directamente al elemento dentro del documento HTML
+
+    Estilos CSS internos
+
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+
+        ** Los estilos CSS internos son definidos dentro de la etiqueta head del documento HTML
+
+    Estilos CSS externos
+
+        ** Los estilos CSS externos se declaran en un archivo .css independiente del documento HTML. La vinculacion entre el documento HTML y el archivo CSS se realiza mediante la siguiente etiqueta que se ubica dentro del head del documento HTML
+
+            <link rel="stylesheet" href="style.css">
+*/

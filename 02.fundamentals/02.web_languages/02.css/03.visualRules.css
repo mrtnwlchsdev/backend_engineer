@@ -1,0 +1,30 @@
+/*
+ * Estilos de texto
+    */
+p {
+    font-family:'Courier New', Courier, monospace; /* Modifica el tipo de fuente utilizado en el documento HTML */
+    font-size: 20px; /* Modifica el tamaño de la fuente utilizado en el documento HTML */
+    font-weight: 900; /* Modifica el valor de negrita del texto en el documento HTML */
+    text-align: center; /* Modifica la alineacion horizontal del texto en el documento HTML */
+}
+
+/*
+ *  Colores
+    */
+h1 {
+    color: white; /* Modifica el color texto en el documento HTML */
+    background-color: antiquewhite; /* Modifica el color del fondo de un elemento HTML */
+    opacity: .5; /* Modifica el nivel de opacidad de un elemento HTML (0 transparente) */
+}
+
+/*
+ * Imagen de fondo
+    */
+div {
+    background-image: url('image.png'); /* Modifica el fondo de un elemento HTML, añadiendo una imagen */
+}
+
+/* !important permite sobreescribir la definicion de un estilo sobre otro */
+p {
+    color: aqua !important; /* El estilo aplicado sobreescribira el resto de estilos que afecten al elemento especificado */
+}

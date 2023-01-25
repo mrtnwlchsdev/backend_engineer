@@ -1,0 +1,78 @@
+/* Selector de tipo
+    Selecciona todos los elementos HTML de un tipo en especifico
+    */
+p {
+    color: red;
+}
+
+/* Selector universal
+    Selecciona todos los elementos que conforman la estructura HTML
+    */
+* {
+    font-size: 1.3rem;
+}
+
+/* Selector de clase
+    Selecciona todos los elementos HTML que contengan el nombre de una clase en especifico
+    */
+.className {
+    background-color: pink;
+}
+
+/* Selector de ID
+    Selecciona al elemento HTML que contenga un id en especifico
+    */
+#idName {
+    color: lightcoral;
+}
+
+/* Selector de atributo
+    Selecciona todos los elementos HTML que contengan un atributo en especifico
+    Generalmente la especificion del selector de atributo se realiza mediante el par atributo-valor
+    */
+input[type="name"] {
+    border: 1px solid lightgray;
+}
+
+/* Pseudoclasses
+    Permiten seleccionar uno o varios elementos HTML a partir de su estado
+    */
+a:hover { /* El estilo sera aplicado al elemento seleccionado cuando se pose el cursor del mouse sobre este */
+    color: red;
+}
+
+/* Especificidad
+    Define el orden en el cual seran aplicados los estilos sobre un elemento HTML
+    Un mismo elemento HTML puede verse afectado por mas de una regla de estilo a la vez, siendo la especificidad CSS la forma de determinar que estilo sera aplicado
+
+        ** Orden de especificidad
+
+        1. id
+        2. clase
+        3. tipo
+    */
+
+/* Encadenamiento de selectores
+    Permite aumentar el nivel de especificidad al momento de aplicar estilos a un determinado elemento
+
+        ** En el siguiente ejemplo la regla de estilo sera aplicada a todos los elementos h1 que contengan la clase title. El resto de elementos que contengan la misma clase no se veran afectados
+    */
+h1.title {
+    color: red;
+}
+
+/* Combinador descendiente
+    Permite definir los estilos a los elementos hijos de un elemento padre en especifico
+    */
+.content p {
+    color: lightcyan;
+}
+
+/* Multiples selectores
+    Multiples selectores CSS pueden compartir una misma regla de estilo
+    */
+.content,
+.header,
+h3 {
+    text-align: center;
+}
