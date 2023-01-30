@@ -1,0 +1,1 @@
+// El scope o alcance de las variables define desde donde estas pueden ser accedidas en el codigo
