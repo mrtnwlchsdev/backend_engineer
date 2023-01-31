@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <!-- Tabla HTML -->
+    <table>
+        <!-- Encabezado -->
+        <thead>
+            <!-- Encabezado -->
+                <!-- *** El atributo scope permite definir si el encabezado definido sera el encabezado de una columna o de una fila -->
+            <th scope="col">Celda de encabezado</th>
+        </thead>
+        <!-- Cuerpo -->
+        <tbody>
+            <!-- Fila -->
+            <tr>
+                <!-- Celda -->
+                    <!-- *** El atributo colspan permite definir la cantidad de columnas que ocupara la celda -->
+                <td colspan="2">Celda 1</td>
+                    <!-- *** El atributo rowspan permite definir la cantidad de filas que ocupara la celda -->
+                <td rowspan="3">Celda 2</td>
+            </tr>
+        </tbody>
+        <!-- Pie de pagina -->
+        <tfoot>
+            <tr>
+                <td>Píe de pagina</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

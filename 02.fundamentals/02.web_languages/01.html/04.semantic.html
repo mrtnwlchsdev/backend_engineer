@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantico</title>
+</head>
+<body>
+    <!--
+        Los elementos HTML semanticos proveen informacion acerca de su contenido a traves de las etiquetas de apertura y cierre
+        - Mejora en la accesibilidad del sitio web
+        - Mayor optimizacion en la busqueda del sitio web a traves del navegador
+        - Facil entendimiento del sitio web
+    -->
+
+    <!-- Encapsula el contenido principal del sitio web -->
+    <main>
+        <!-- Utilizado para contener enlaces de navegacion y la informacion introductoria del sitio  -->
+        <header>
+            <!-- Contenedor de los enlaces principales de navegacion del sitio -->
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Seccion de contenido del sitio web -->
+        <section>
+            <!-- Seccion de contenido independiente -->
+            <article>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, earum!
+            </article>
+            <!-- Encapsula contenido multimedia como imagenes, diagramas, ilustraciones, etc. -->
+            <figure>
+                <img src="./figure.png" alt="">
+                <!-- Texto descriptivo del contenido multimedia -->
+                <figcaption>Image label</figcaption>
+            </figure>
+            <!-- Incluir contenido multimedia tipo audio -->
+            <audio controls>
+                <source src="./audio.mp3" type="audio/mp3">
+            </audio>
+            <!-- Incluir contenido multimedia tipo video -->
+            <video controls>
+                <source src="" type="">
+                <source src="./audio.mp4" type="video/mp4">
+            </video>
+
+            <!-- *** El atributo controls añade los botones basicos para manipular el reproductor de audio o video renderizado -->
+
+        </section>
+        <!-- Contenido relacionado al contenido principal, pero que no es necesario para entenderlo -->
+        <aside>
+            <!--
+                - Bibliografias
+                - Comentarios
+                - Editorial
+                - Informacion adicional
+            -->
+        </aside>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <!--
+            - Informacion de contacto
+            - Informacion de copyright
+            - Terminos de uso
+            - Mapa del sitio
+            - Enlaces de navegacion a sitios web de terceros
+        -->
+    </footer>
+</body>
+</html>
