@@ -1,0 +1,56 @@
+/* El navegador renderiza los elementos HTML en un flujo descendente, en el mismo orden en que existen en el documento HTML */
+
+/*
+ * Display
+    - block: Ocupan todo el ancho disponible de su elemento padre mas cercano
+    - inline: Ocupan solo el ancho necesario por el contenido del elemento
+    */
+
+/* El valor inline-block de la propiedad display, permite estilizar un elemento HTML que combine las caracteristicas de display block y display inline */
+div {
+    display: inline-block;
+    /*
+        - El elemento podra ubicarse al lado de otros elementos con posicionamiento inline o inline-block
+        - Se podra modificar los valores del modelo de caja del elemento
+    */
+}
+
+/*
+ * Position
+    La posicion inicial de un elemento puede ser modificada a traves de la propiedad position
+    - static
+        Posicionamiento por defecto
+    - relative
+        Posicionamiento relativo al posicionamiento inicial dentro del elemento padre mas cercano
+    - absolute
+        Posicionamiento relativo al posicionamiento inicial dentro del elemento padre mas cercano posicionado relativamente. El elemento es extraido del flujo HTML y el resto de elemento que lo rodean ocuparan su lugar en la estructura
+    - fixed
+        El elemento posicionado a traves de la propiedad fixed se mantendra visible en la interfaz grafica del navegador, incluso al hacer scroll dentro del sitio o pagina web
+    - sticky
+        El elemento posicionado a traves de la propiedad sticky permanecera fijo al hacer scroll en una posicion especifica
+
+        ** La posicion de un elemento se define a traves de las propiedades top, right, bottom y left
+    */
+
+/*
+ * Propiedad z-index
+    Permite definir el posicionamiento en el eje z de un elemento.
+    A traves de la propiedad z-index es posible especificar que elemento se mostrara sobre otro cuando estos se superponen
+    */
+.className1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.className2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 5;
+}
+/* El elemento que contiene la clase className1 se mostrara sobre el elemento con la clase className2, ya que tiene un valor mayor de z-index */
