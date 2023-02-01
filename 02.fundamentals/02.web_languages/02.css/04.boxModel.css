@@ -1,0 +1,85 @@
+/* El modelo de caja compone un conjunto de propiedades que definen el espacio que ocupa un elemento en una pagina web */
+
+/* Ancho y alto */
+.className1 {
+    width: 100px; /* Ancho */
+    height: 100px; /* Alto */
+}
+
+/* Borde */
+.className2 {
+    border: 1px solid red;
+}
+
+/* Borde redondeado */
+.className3 {
+    border: 1px solid red;
+    border-radius: 50px;
+}
+
+/* Relleno */
+.className4 {
+    padding: 10px;
+}
+
+/* Margen */
+.className5 {
+    margin: 10px;
+}
+
+/*
+ * El valor auto de la propiedad margin permite centrar un elemento dentro de su padre mas cercano, siempre y cuando se haya definido el ancho de dicho elemento
+    */
+.className6 {
+    width: 200px;
+    margin: auto;
+}
+
+/* Ancho y alto minimo y maximo */
+.className7 {
+    min-width: 200px; /* Ancho minimo que puede tener el elemento */
+    max-width: 500px; /* Ancho maximo que puede tener el elemento */
+    min-height: 100px; /* Alto minimo que puede tener el elemento */
+    max-height: 500px; /* Alto maximo que puede tener el elemnto */
+}
+
+/*
+ * Desbordamiento
+    La propiedad overflow permite controlar el comportamiento de un elemento cuando sus dimensiones superan la el tamaño de su padre mas cercano
+    */
+.className8 {
+    overflow: hidden; /* Desbordamiento oculto */
+}
+.className9 {
+    overflow: scroll; /* Desbordamiento controlado mediante la barra de scroll */
+}
+
+/* Resetar los estilos del modelo de caja por defecto configurados a traves del navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Visibilidad
+    La propiedad visibility permite controlar la visualizacion de un elemento en la interfaz del navegador
+     */
+.className10 {
+    visibility: hidden; /* Elemento oculto */
+}
+
+/*
+ * Propiedad box-sizing
+    La propiedad content-box permite controlar las dimensiones de un elemento HTML, evitando modificar su tamaño cuando este sea afectado por las propiedades del modelo de caja
+
+        div {
+            border: 1px solid red;
+            width: 100px;
+        }
+        ** Sin la propiedad box-sizing, el ancho del elemento seria alterado añadiendo 1 pixel a cada lado del elemento
+
+        * {
+            box-sizing: border-box;
+        }
+        ** El valor border-box evita que las propiedades del modelo de caja afecten el tamaño del inicial del elemento, configurado a traves de las propiedades width y height
+    */
